@@ -207,11 +207,11 @@ main {
   }
 
   .hero-text h1 {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .hero-text p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .nav-bar {
@@ -261,7 +261,7 @@ main {
 
   .photo-box img {
     position: static !important;
-    width: 45vw;
+    width: 30vw;
     height: auto;
     transform: none !important;
     border-radius: 8px;
