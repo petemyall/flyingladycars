@@ -159,7 +159,7 @@ photo-box img:nth-child(3) { top: 20px; left: 35%; transform: rotate(-2deg); }
 
 /* Footer */
 .footer {
-  margin-top: 90vh;
+  margin-top: 85vh;
   text-align: center;
   font-size: 1.25rem;
   color: #FDA828;
