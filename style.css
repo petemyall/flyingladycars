@@ -1,29 +1,23 @@
-/* Base styling */
-body {
-  min-height: 100vh;
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Georgia, sans-serif;
-  margin: 0;
-  padding: 0 5%;
-  font-size: 1rem;
+/* Global Box Model Fix */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
+/* Base styling */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: Georgia, serif;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  font-size: 1rem;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Description box */
@@ -117,6 +111,7 @@ html, body {
   max-width: 1200px;
   height: 18vh;
   z-index: 50;
+  overflow: hidden;
 }
 
 .photo-box img {
@@ -132,7 +127,7 @@ html, body {
 /* Rotations and positions for scrapbook effect */
 .photo-box img:nth-child(1) { top: 10px; left: 5%; transform: rotate(-5deg); }
 .photo-box img:nth-child(2) { top: 40px; left: 20%; transform: rotate(3deg); }
-.photo-box img:nth-child(3) { top: 20px; left: 35%; transform: rotate(-2deg); }
+photo-box img:nth-child(3) { top: 20px; left: 35%; transform: rotate(-2deg); }
 .photo-box img:nth-child(4) { top: 60px; left: 50%; transform: rotate(4deg); }
 .photo-box img:nth-child(5) { top: 30px; left: 65%; transform: rotate(-4deg); }
 .photo-box img:nth-child(6) { top: 10px; left: 80%; transform: rotate(2deg); }
@@ -221,4 +216,4 @@ html, body {
   .car-card img {
     width: 100%;
   }
-                             }
+}
