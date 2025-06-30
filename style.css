@@ -1,4 +1,4 @@
-9/* Base styling */
+/* Base styling */
 body {
   min-height: 100vh;
   background-image: url('images/background.jpg');
@@ -9,6 +9,7 @@ body {
   font-family: Georgia, sans-serif;
   margin: 0;
   padding: 0 5%;
+  font-size: 1rem;
 }
 
 html, body {
@@ -16,99 +17,24 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Scrapbook photo layout */
-.photo-box {
-  position: fixed;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95%;
-  max-width: 1200px;
-  height: 18vh;
-  z-index: 50;
-}
-
-.photo-box img {
-  position: absolute;
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 3px 3px 12px rgba(0,0,0,0.3);
-  transition: transform 0.3s, z-index 0.3s;
-  cursor: pointer;
-}
-
-.photo-box img:nth-child(1) {
-  top: 10px;
-  left: 5%;
-  transform: rotate(-5deg);
-}
-.photo-box img:nth-child(2) {
-  top: 40px;
-  left: 20%;
-  transform: rotate(3deg);
-}
-.photo-box img:nth-child(3) {
-  top: 20px;
-  left: 35%;
-  transform: rotate(-2deg);
-}
-.photo-box img:nth-child(4) {
-  top: 60px;
-  left: 50%;
-  transform: rotate(4deg);
-}
-.photo-box img:nth-child(5) {
-  top: 30px;
-  left: 65%;
-  transform: rotate(-4deg);
-}
-.photo-box img:nth-child(6) {
-  top: 10px;
-  left: 78%;
-  transform: rotate(2deg);
-}
-
-.photo-box img:hover {
-  transform: scale(1.1) rotate(0deg);
-  z-index: 10;
-}
-
 /* Description box */
 .description-box {
-.description-box {
   position: fixed;
-  top: 30vh;
+  top: 45vh;
   left: 50%;
   transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   width: 90vw;
   max-width: 800px;
-  height: 60vh;
-  overflow-y: auto;
-  background-color: rgba(255,255,255,0.0); /* transparent */
+  max-height: 50vh;
   padding: 20px;
-  scroll-behavior: smooth;
+  overflow-y: auto;
   z-index: 100;
 }
 
-.intro-logo {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.main-logo {
-  width: 150px;
-  height: auto;
-}
-/* General content section */
-.content {
-  padding-top: 10px;
-  min-height: 100vh;
-  background-color: rgba(247, 246, 243, 0);
-  width: 25vw;
-}
-
-/* Logo styling */
+/* Logo styles */
 .site-logo {
   position: fixed;
   top: 2%;
@@ -126,78 +52,164 @@ html, body {
   height: auto;
   z-index: 1000;
 }
+
 .main-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px; /* Adjust as needed */
-  padding-right: 10%; /* Pushes it to the right */
+  margin: 0 auto 20px auto;
+  width: 160px;
+  height: auto;
 }
 
-/* Top header section */
+/* Fixed top bar */
 .fixed-top {
   position: fixed;
   top: 0;
   left: 0;
-  width: 95%;
+  width: 100%;
   z-index: 999;
   text-align: center;
-  background-color: rgba(0,0,0,0.0);
+  background-color: rgba(0, 0, 0, 0.0);
   padding-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.0);
 }
 
-/* Car card layout */
-.car-card {
-  width: 300px;
-}
-.car-card img {
-  width: 100px;
-  height: auto;
-}
-
-/* Navigation buttons */
-.btn {
-  display: inline-block;
-  background-color: #610303;
-  color: #dbc45c;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-family: Georgia, serif;
-  text-decoration: none;
-  border-radius: 8px;
-  border: 2px solid #8a0000;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
-  transition: background-color 0.3s, transform 0.2s;
-  margin: 0 0 2vh 0;
-}
-.btn:hover {
-  background-color: #8a0000;
-  transform: translateY(-2px);
+/* Nav buttons */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .btn2 {
-  display: inline-block;
   background-color: #610303;
   color: #dbc45c;
   padding: 9px 18px;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-family: Georgia, serif;
   text-decoration: none;
   border-radius: 8px;
   border: 2px solid #8a0000;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s, transform 0.2s;
 }
+
 .btn2:hover {
   background-color: #8a0000;
   transform: translateY(-2px);
 }
 
-/* Footer spacing */
-.footer {
-  margin-top: 80vh;
+/* Photo box layout */
+.photo-box {
+  position: fixed;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1200px;
+  height: 18vh;
+  z-index: 50;
+}
+
+.photo-box img {
+  position: absolute;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, z-index 0.3s;
+  cursor: pointer;
+}
+
+/* Rotations and positions for scrapbook effect */
+.photo-box img:nth-child(1) { top: 10px; left: 5%; transform: rotate(-5deg); }
+.photo-box img:nth-child(2) { top: 40px; left: 20%; transform: rotate(3deg); }
+.photo-box img:nth-child(3) { top: 20px; left: 35%; transform: rotate(-2deg); }
+.photo-box img:nth-child(4) { top: 60px; left: 50%; transform: rotate(4deg); }
+.photo-box img:nth-child(5) { top: 30px; left: 65%; transform: rotate(-4deg); }
+.photo-box img:nth-child(6) { top: 10px; left: 80%; transform: rotate(2deg); }
+
+.photo-box img:hover {
+  transform: scale(1.1) rotate(0deg);
+  z-index: 10;
+}
+
+/* Car card layout */
+.car-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.car-card {
+  width: 280px;
   text-align: center;
 }
 
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
+/* Footer */
+.footer {
+  margin-top: 80vh;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 599px) {
+  .fixed-top {
+    padding: 10px 5%;
+    font-size: 0.9rem;
+  }
+
+  .site-logo,
+  .site-logo2 {
+    width: 60px;
+  }
+
+  .btn2 {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    margin: 4px;
+  }
+
+  .description-box {
+    top: 10vh !important;
+    max-height: 75vh;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .photo-box {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+    transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .photo-box img {
+    position: static;
+    width: 45vw;
+    transform: none !important;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .car-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .car-card img {
+    width: 100%;
+  }
+                             }
