@@ -152,7 +152,7 @@ photo-box img:nth-child(3) { top: 20px; left: 35%; transform: rotate(-2deg); }
 }
 
 .car-card img {
-  width: 100%;
+  width: 180px;
   height: auto;
   border-radius: 10px;
 }
