@@ -1,4 +1,4 @@
-/* Base styling */
+9/* Base styling */
 body {
   min-height: 100vh;
   background-image: url('images/background.jpg');
@@ -76,21 +76,30 @@ html, body {
 
 /* Description box */
 .description-box {
+.description-box {
   position: fixed;
-  top: 50vh;
+  top: 30vh;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(247, 246, 243, 0);
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   width: 90vw;
   max-width: 800px;
-  max-height: 25vh;
-  padding: 10px;
+  height: 60vh;
   overflow-y: auto;
+  background-color: rgba(255,255,255,0.0); /* transparent */
+  padding: 20px;
+  scroll-behavior: smooth;
   z-index: 100;
 }
 
+.intro-logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-logo {
+  width: 150px;
+  height: auto;
+}
 /* General content section */
 .content {
   padding-top: 10px;
