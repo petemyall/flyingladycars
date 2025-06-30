@@ -197,6 +197,9 @@ main {
 }
 
 @media (max-width: 599px) {
+  body {
+  background-color: lime;
+  }
 
   /* Fixed Top Adjustments */
   .fixed-top {
