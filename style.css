@@ -10,22 +10,19 @@ body {
   margin: 0;
   padding: 0 5%;
 }
+
 html, body {
   height: 100%;
   overflow-x: hidden;
 }
-  font-family: Georgia, sans-serif;
-  margin: 0;
-  padding: 0;
- 
 
 /* Example content styling */
 main {
   padding: 50px;
   margin-top: 5vh;
-
 }
 
+/* Scrapbook photo layout */
 .photo-box {
   position: fixed;
   top: 20vh;
@@ -34,7 +31,7 @@ main {
   width: 95%;
   max-width: 1200px;
   height: 18vh;
-  z-index: 50; /* just in case you want to layer it under the top nav */
+  z-index: 50;
 }
 
 .photo-box img {
@@ -47,7 +44,6 @@ main {
   cursor: pointer;
 }
 
-/* Specific positions and slight rotations */
 .photo-box img:nth-child(1) {
   top: 10px;
   left: 5%;
@@ -75,23 +71,22 @@ main {
 }
 .photo-box img:nth-child(6) {
   top: 10px;
-  left: 80%;
+  left: 78%;
   transform: rotate(2deg);
 }
 
-/* Hover zoom and lift */
 .photo-box img:hover {
   transform: scale(1.1) rotate(0deg);
   z-index: 10;
 }
 
-
+/* Description box */
 .description-box {
   position: fixed;
-  top: 50vh; /* 50% from top of screen */
+  top: 50vh;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(247, 246, 243, 0); /* slight tint for readability */
+  background-color: rgba(247, 246, 243, 0);
   border-radius: 15px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   width: 90vw;
@@ -99,9 +94,10 @@ main {
   max-height: 25vh;
   padding: 10px;
   overflow-y: auto;
-  z-index: 100; /* ensure it’s above most things */
+  z-index: 100;
 }
 
+/* General content section */
 .content {
   padding-top: 400px;
   min-height: 100vh;
@@ -109,7 +105,7 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* optional parallax effect */
+  background-attachment: fixed;
 }
 
 /* Logo styling */
@@ -131,6 +127,7 @@ main {
   z-index: 1000;
 }
 
+/* Top header section */
 .fixed-top {
   position: fixed;
   top: 0;
@@ -138,24 +135,24 @@ main {
   width: 95%;
   z-index: 999;
   text-align: center;
-  background-color: rgba(0,0,0,0.0); /* transparent background */
+  background-color: rgba(0,0,0,0.0);
   padding-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.0);
 }
 
-.card-card {
+/* Car card layout */
+.car-card {
   width: 215px;
 }
-
 .car-card img {
   width: 100px;
   height: auto;
 }
 
-/* Nav Buttons */
+/* Navigation buttons */
 .btn {
   display: inline-block;
-  background-color: #610303; /* classic deep brown */
+  background-color: #610303;
   color: #dbc45c;
   padding: 12px 24px;
   font-size: 1rem;
@@ -167,7 +164,6 @@ main {
   transition: background-color 0.3s, transform 0.2s;
   margin: 0 0 2vh 0;
 }
-
 .btn:hover {
   background-color: #8a0000;
   transform: translateY(-2px);
@@ -186,22 +182,20 @@ main {
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
   transition: background-color 0.3s, transform 0.2s;
 }
-
 .btn2:hover {
   background-color: #8a0000;
   transform: translateY(-2px);
 }
+
+/* Footer spacing */
 .footer {
-  margin-top: 80vh; /* give breathing room so it doesn’t clash with box */
+  margin-top: 80vh;
   text-align: center;
 }
 
+/* Responsive: Mobile layout under 599px */
 @media (max-width: 599px) {
-  body {
-  background-color: lime;
-  }
 
-  /* Fixed Top Adjustments */
   .fixed-top {
     padding: 10px 5%;
     font-size: 0.9rem;
@@ -220,7 +214,6 @@ main {
     font-size: 1rem;
   }
 
-  /* Navigation Buttons */
   .nav-bar {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +227,6 @@ main {
     margin: 4px;
   }
 
-  /* Description Box */
   .description-box {
     top: 10vh !important;
     max-height: 70vh;
@@ -242,7 +234,6 @@ main {
     font-size: 0.95rem;
   }
 
-  /* Car Cards */
   .car-card {
     display: flex;
     flex-direction: column;
@@ -256,13 +247,12 @@ main {
     max-width: 280px;
   }
 
-  /* Photo Box as Stacked Layout */
   .photo-box {
-    position: static;
+    position: static !important;
     width: 100%;
-    height: auto;
+    height: auto !important;
     margin: 40px auto;
-    transform: none;
+    transform: none !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -270,7 +260,7 @@ main {
   }
 
   .photo-box img {
-    position: static;
+    position: static !important;
     width: 45vw;
     height: auto;
     transform: none !important;
@@ -278,9 +268,7 @@ main {
     box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
   }
 
-  /* Base font scaling */
   body {
     font-size: 0.95rem;
   }
-
 }
