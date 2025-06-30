@@ -125,7 +125,7 @@ main {
 }
 .main-logo {
   position: fixed;
-  right: 50%;
+  alignment: center;
   width: 250px;
   height: auto;
   z-index: 1000;
