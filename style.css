@@ -229,7 +229,7 @@ main {
 
   .description-box {
     top: 10vh !important;
-    max-height: 70vh;
+    max-height: 20vh;
     padding: 12px;
     font-size: 0.95rem;
   }
