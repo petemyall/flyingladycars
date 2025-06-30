@@ -195,3 +195,89 @@ main {
   margin-top: 80vh; /* give breathing room so it doesn’t clash with box */
   text-align: center;
 }
+
+@media (max-width: 599px) {
+
+  /* Fixed Top Adjustments */
+  .fixed-top {
+    padding: 10px 5%;
+    font-size: 0.9rem;
+  }
+
+  .site-logo,
+  .site-logo2 {
+    width: 60px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  /* Navigation Buttons */
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .btn2 {
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    margin: 4px;
+  }
+
+  /* Description Box */
+  .description-box {
+    top: 10vh !important;
+    max-height: 70vh;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  /* Car Cards */
+  .car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .car-card img {
+    width: 90%;
+    max-width: 280px;
+  }
+
+  /* Photo Box as Stacked Layout */
+  .photo-box {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+    transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .photo-box img {
+    position: static;
+    width: 45vw;
+    height: auto;
+    transform: none !important;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Base font scaling */
+  body {
+    font-size: 0.95rem;
+  }
+
+}
