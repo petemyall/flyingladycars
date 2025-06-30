@@ -16,11 +16,6 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Example content styling */
-main {
-  padding: 10px;
-}
-
 /* Scrapbook photo layout */
 .photo-box {
   position: fixed;
