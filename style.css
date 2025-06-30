@@ -28,11 +28,12 @@ html, body {
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0);
   border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0);
   width: 90vw;
   max-width: 800px;
   max-height: 35vh;
   padding: 20px;
+  margin-bottom: 10px;
   overflow-y: auto;
   z-index: 100;
 }
