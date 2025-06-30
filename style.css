@@ -99,7 +99,7 @@ main {
 
 /* General content section */
 .content {
-  padding-top: 100px;
+  padding-top: 10px;
   min-height: 100vh;
   background-color: rgba(247, 246, 243, 0);
   width: 25vw;
