@@ -195,7 +195,7 @@ html, body {
     width: 100%;
     height: auto;
     margin: 40px auto;
-    transform: none;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
