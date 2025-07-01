@@ -171,6 +171,13 @@ html, body {
     padding: 10px 5%;
     font-size: 0.9rem;
   }
+  .main-logo {
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 500px;
+  height: auto;
+  }
+  
 
   .site-logo,
   .site-logo2 {
