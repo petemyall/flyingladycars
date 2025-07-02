@@ -195,6 +195,9 @@ html, body {
     max-height: 25vh;
     padding: 12px;
     font-size: 0.95rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
   }
 
  .photo-box {
