@@ -197,25 +197,27 @@ html, body {
     font-size: 0.95rem;
   }
 
-  .photo-box {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin: 40px auto;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
+ .photo-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0); /* optional for debugging */
+}
 
   .photo-box img {
-  position: relative; /* instead of static */
-  left: auto;
-  transform: none; /* remove translateX entirely */
-  width: 45vw;
-  margin: 0 auto;
-  display: block;
+  position: relative;
+  width: 44vw;
+  max-width: 140px;
+  height: auto;
+  transform: none;
+  margin: 0;
 }
    .car-card {
     width: 90%;
