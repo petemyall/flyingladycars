@@ -174,7 +174,7 @@ html, body {
   .main-logo {
   display: block;
   margin: 0 auto 20px auto;
-  width: 100px;
+  width: 60vw;
   height: auto;
   }
   
@@ -212,7 +212,7 @@ html, body {
   .photo-box img {
     position: static;
     width: 45vw;
-    transform: none !important;
+    transform: translateX(-50%) !important;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   }
