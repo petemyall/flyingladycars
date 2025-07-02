@@ -209,7 +209,7 @@ html, body {
     gap: 12px;
   }
 
-  ..photo-box img {
+  .photo-box img {
   position: relative; /* instead of static */
   left: auto;
   transform: none; /* remove translateX entirely */
