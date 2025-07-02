@@ -191,7 +191,7 @@ html, body {
   }
 
   .description-box {
-    top: 10vh !important;
+    top: 50vh !important;
     max-height: 25vh;
     padding: 12px;
     font-size: 0.95rem;
