@@ -229,7 +229,9 @@ html, body {
 
   .car-card img {
     width: 120px;
-    
   }
+
+  .footer {
+    font-size: 1rem;
 
 }
