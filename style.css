@@ -209,13 +209,14 @@ html, body {
     gap: 12px;
   }
 
-  .photo-box img {
-    position: static;
-    width: 45vw;
-    transform: translateX(-50%) !important;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-  }
+  ..photo-box img {
+  position: relative; /* instead of static */
+  left: auto;
+  transform: none; /* remove translateX entirely */
+  width: 45vw;
+  margin: 0 auto;
+  display: block;
+}
    .car-card {
     width: 90%;
     margin: auto;
