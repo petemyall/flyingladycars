@@ -216,5 +216,14 @@ html, body {
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
   }
+   .car-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .car-card img {
+    width: 120px;
+    
+  }
 
 }
