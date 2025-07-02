@@ -168,7 +168,8 @@ html, body {
 /* Media Queries */
 @media (max-width: 599px) {
   .fixed-top {
-    padding: 10px 5%;
+    padding-top: 10px;
+    padding-bottom: 30px;
     font-size: 0.9rem;
   }
   .main-logo {
@@ -235,5 +236,16 @@ html, body {
 
   .footer {
     font-size: 1rem;
+}
 
+  .hero-text h1 {
+  font-size: 1.8rem; /* Bigger heading */
+  margin: 0.3em 0;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.1rem; /* Larger subtitle text */
+  margin: 0.2em 0;
+  line-height: 1.4;
 }
