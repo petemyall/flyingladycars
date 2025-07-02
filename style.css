@@ -191,13 +191,12 @@ html, body {
   }
 
   .description-box {
-    top: 50vh !important;
-    max-height: 25vh;
+    top: 38vh; /* adjust depending on your .photo-box height */
+    max-height: 58vh;
+    overflow-y: auto;
     padding: 12px;
     font-size: 0.95rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
+    display: block;
   }
 
  .photo-box {
