@@ -185,10 +185,10 @@ html, body {
   }
 
   .btn2 {
-    padding: 8px 12px;
-    width: 22.5vw;
+    padding: 8px 10px;
+    width: 21.5vw;
     font-size: 0.75rem;
-    margin: 1.5px;
+    margin: 1px;
   }
 
   .description-box {
