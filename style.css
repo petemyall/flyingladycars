@@ -192,7 +192,6 @@ html, body {
 
   .description-box {
     top: 50vh !important;
-    transform: translateX(none);
     max-height: 25vh;
     padding: 12px;
     font-size: 0.95rem;
