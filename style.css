@@ -237,15 +237,3 @@ html, body {
   .footer {
     font-size: 1rem;
 }
-
-  .hero-text h1 {
-  font-size: 3.6rem; /* Bigger heading */
-  margin: 0.3em 0;
-  line-height: 1.2;
-}
-
-.hero-text p {
-  font-size: 2.5rem; /* Larger subtitle text */
-  margin: 0.2em 0;
-  line-height: 1.4;
-}
