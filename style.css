@@ -235,10 +235,10 @@ html, body {
 
   .photo-box img {
   position: relative;
-  width: 26vw;         /* Slightly more breathing room */
+  width: 18vw;         /* Slightly more breathing room */
   max-width: 100px;    /* Ensures good scaling on small screens */
   height: auto;
-  margin: 4px;         /* Adds spacing between photos */
+  margin: 2px;         /* Adds spacing between photos */
   transform: none;     /* Keeps images straight */
 }
    .car-card {
