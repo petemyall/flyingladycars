@@ -184,7 +184,7 @@ html, body {
 @media (max-width: 599px) {
   .fixed-top {
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     font-size: 0.9rem;
   }
   .main-logo {
