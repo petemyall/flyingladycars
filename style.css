@@ -234,7 +234,7 @@ html, body {
   overflow: visible;       /* ← Let content show */
 }
 
-  .photo-box img {
+  /* .photo-box img { */
   position: relative;
   width: 18vw;         /* Slightly more breathing room */
   max-width: 100px;    /* Ensures good scaling on small screens */
