@@ -209,7 +209,7 @@ html, body {
 
   .description-box {
     top: 50vh; /* adjust depending on your .photo-box height */
-    max-height: 32vh;
+    max-height: 30vh;
     overflow-y: auto;
     padding: 12px;
     font-size: 0.80rem;
