@@ -234,13 +234,17 @@ html, body {
   overflow: visible;       /* ← Let content show */
 }
 
-  .photo-box img {
+  /* .photo-box img { */
   position: relative;
   width: 180px;
   max-width: 100px;    /* Ensures good scaling on small screens */
   height: auto;
   margin: 2px;         /* Adds spacing between photos */
   transform: none;     /* Keeps images straight */
+}
+.photo-box img {
+  width: 120px;
+  height: auto;
 }
    .car-card {
     width: 90%;
