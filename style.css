@@ -218,27 +218,28 @@ html, body {
   justify-content: flex-start;
   }
 
- .photo-box {
+.photo-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 12px;
-  padding: 10px;
+  gap: 8px;
+  padding: 10px 5px;
   width: 100%;
   max-width: 100%;
   margin: 20px auto;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0); /* optional for debugging */
+  height: auto;            /* ← Override the 18vh */
+  overflow: visible;       /* ← Let content show */
 }
 
   .photo-box img {
   position: relative;
-  width: 22vw;
-  max-width: 140px;
+  width: 26vw;         /* Slightly more breathing room */
+  max-width: 100px;    /* Ensures good scaling on small screens */
   height: auto;
-  transform: none;
-  margin: 0;
+  margin: 4px;         /* Adds spacing between photos */
+  transform: none;     /* Keeps images straight */
 }
    .car-card {
     width: 90%;
