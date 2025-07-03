@@ -208,11 +208,11 @@ html, body {
   }
 
   .description-box {
-    top: 45vh; /* adjust depending on your .photo-box height */
-    max-height: 52vh;
+    top: 42vh; /* adjust depending on your .photo-box height */
+    max-height: 40vh;
     overflow-y: auto;
     padding: 12px;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     display: block; /* Ensures it's not flexbox */
   vertical-align: top;
   align-items: flex-start;
@@ -248,7 +248,7 @@ html, body {
   }
 
   .car-card img {
-    width: 120px;
+    width: 100px;
   }
 
   .footer {
