@@ -230,7 +230,7 @@ html, body {
   max-width: 100%;
   margin: 20px auto;
   box-sizing: border-box;
-  height: 18vh;            /* ← Override the 18vh */
+  height: 35vh;            /* ← Override the 18vh */
   overflow: visible;       /* ← Let content show */
 }
 
